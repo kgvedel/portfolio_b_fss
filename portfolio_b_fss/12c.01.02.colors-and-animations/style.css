@@ -132,7 +132,9 @@
     /* filter: blur(20px); */
     /* background-color: var(--color-secondary2); */
     background-color: var(--color-primary2);
+    animation: pulse 5s infinite ease-in-out;
   }
+
 
   .container {
     background-color: var(--color-secondary3);
@@ -640,4 +642,20 @@ input:checked + label:after {
 
 label:active:after {
   width: 45px;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+		
+	}
+
+	70% {
+		transform: scale(0.75);
+		
+	}
+
+	100% {
+		transform: scale(1);
+	}
 }

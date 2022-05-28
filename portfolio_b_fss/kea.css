@@ -1,14 +1,18 @@
+:root{
+    --background-s-green: rgb(200,255,0, 0.5);
+    --btn_hover: #0400ff;
+}
 
 /*STYLING AF MOBILE*/
 
-#k_boks{  
+#k_boks, #conclusion{  
     margin: 1.5rem;
     background-color: white;
-    outline: solid 10px rgb(200,255,0, 0.5);
+    outline: solid 10px var(--background-s-green);
     margin-top: 5rem; 
     
 }
-#k_first_section{
+#k_first_section, #conclusion{
     display: grid;
     grid-template-columns: 1fr;
     padding: 2rem;
@@ -26,35 +30,37 @@
 }
 
 
-.billede_w img{
-    object-fit: fill;
-    height: 100%;
-    width: 100%;
-}
-
 .billede_w{
-    display: grid;
-    gap: 1rem;
+    margin: 0 auto;
+    background-color: black;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+
 }
 
-.billede_w button{
-    align-items: center;
+.cards h2{
+    background-color: white;
+    width: 20rem;
+    padding: 1rem;
 }
-
-
 
 
 
 /*STYLING AF DESKTOP*/
 
 @media (min-width:770px) {
-    #k_first_section{
+    #k_first_section, #conclusion{
         margin: 0 auto;
         background-color: white;
         max-width: 45rem;
         padding: 5rem;
-outline: solid 10px rgb(200,255,0, 0.5);
+outline: solid 10px var(--background-s-green);
     }
+
+    #conclusion {
+        margin-top: 15rem;
+        }
 
     #k_boks{
         background-color: transparent;
@@ -66,7 +72,7 @@ outline: solid 10px rgb(200,255,0, 0.5);
         width: 65%;
         height: 16rem;
         transform: skew(13deg);
-        background-color: 	rgb(200,255,0, 0.5);
+        background-color: 	var(--background-s-green);
         margin: 0 auto;
         position: relative;
         margin-bottom: -12rem;
@@ -78,9 +84,9 @@ top: 2rem;
             height: 16rem;
             transform: skew(13deg);
             position: relative;
-            background-color: 	rgb(200,255,0, 0.5);
+            background-color: 	var(--background-s-green);
             margin: 0 auto;
-            top: 14rem;
+            top: 3rem;
             }
 
 #hul_billede{
@@ -108,6 +114,7 @@ width: 30rem;
 padding-top: 0rem;
 position: relative;
 transition: 3s;
+margin-top: -10rem;
 
 }
 
@@ -136,7 +143,7 @@ transition: 3s;
 }
 
 .list_card:hover{
-    transform: skew(1.5deg);
+    transform: scale(1.05);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.377);
     transition: 2s;
 }
@@ -147,7 +154,7 @@ transition: 3s;
     flex-wrap: wrap;
     margin: 0 auto;
     gap: 1rem;
-    background-color:rgb(200,255,0, 0.5);
+    background-color:var(--background-s-green);
 }
 
 }
