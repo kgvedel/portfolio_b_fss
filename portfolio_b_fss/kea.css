@@ -159,14 +159,19 @@ margin-top: -10rem;
 
 }
 
+.w_list_cards{
+    margin: 0 auto;
+}
+
 .list_card{  
+    margin: 0 auto;
     width: 100%;
-    flex: 1 0 200px;
     box-sizing: border-box;
     margin: 1rem 0.25em;
     border-radius: 0.25rem;
     overflow: hidden;
     padding: 1rem;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.377);
     background-color: rgb(255, 255, 255);
     transition: 2s;
 }
