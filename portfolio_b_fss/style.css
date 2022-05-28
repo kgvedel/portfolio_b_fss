@@ -135,7 +135,7 @@ p{
     font-weight: 400;
 }
 
-.btn_list{
+button, .btn_list{
     display: grid;
     justify-content: center;
     background-color: black;
@@ -148,7 +148,7 @@ p{
     transition: 1s;
 }
 
-.btn_list:hover{
+button, .btn_list:hover{
     background-color: rgb(200, 255, 0);
     color: black;
     transform: scale(1.07);
