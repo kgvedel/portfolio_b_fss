@@ -1,0 +1,391 @@
+#c_boks{
+    margin: 1.5rem;
+    
+}
+    
+#c_tekst {
+    padding-right: 1rem;
+   
+    }
+
+  #c_second_section, #c_first_section{
+    margin: 0 auto;
+    background-color: white;
+    gap: 10rem;
+    max-width: 45rem;
+    outline: solid 10px rgb(200,255,0, 0.5);
+    padding: 2rem;
+    margin-top: 5rem;
+    
+  }
+    #c_billede, #c_billede_two{
+   display: none;
+    }
+    
+    @media (min-width:770px) {
+        #c_boks{
+            background-color: transparent;
+        } 
+
+        #c_first_section{
+            margin: 0 auto;
+            background-color: white;
+            outline: solid 10px rgb(200,255,0, 0.5);
+            height: 60.8rem;
+            max-width: 45rem;
+            padding: 5rem;
+            margin-top: 5rem;
+        }
+
+        .c_tekst{
+            margin: 0 auto;
+        }
+
+        #c_second_section{
+            margin: 0 auto;
+            background-color: white;
+            max-width: 45rem;
+            outline: solid 10px rgb(200,255,0, 0.5);
+            padding: 5rem;
+            height: 59rem;
+            gap: 10rem;
+
+
+          }
+    
+
+        .boks {
+            width: 65%;
+            height: 16rem;
+            transform: skew(13deg);
+            background-color: 	rgb(200,255,0, 0.5);
+            margin: 0 auto;
+            position: relative;
+            margin-bottom: -17rem;
+            top: 2rem;
+            }
+    
+            .boks_two {
+                height: 16rem;
+                position: relative;
+                background-color: 	rgb(200,255,0, 0.5);
+                margin: 0 auto;
+                top: 2rem;
+
+               width: 65%;
+transform: skew(13deg);
+
+
+
+                }
+                .circle{
+                  border: solid 1px black;
+                  width: 2rem;
+                  height: 2rem;
+                  border-radius: 50%;
+              }
+              
+
+                .tekst_small h2{
+                  font-family: "bebas neue";
+                    font-size: 1.35rem;
+                    font-weight: 900;
+                    text-decoration: underline;
+                }
+    
+    #c_billede{
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        width: 23rem;
+left: 9rem;
+top: -8rem;
+
+transition: 3s;
+        
+    }
+
+    #c_billede:hover{
+        transform: rotate(20deg);
+        transition: 3s;
+    }
+
+    #c_billede_two{
+      display: block;
+        margin: 0 auto;
+        position: relative;
+        width: 24rem;
+        left: -13.7rem;
+        top: -28rem;
+        transition: 3s;
+
+    }
+    #c_billede_two:hover{
+    transform: rotate(-20deg);
+    transition: 3s;
+    }
+
+    .tekst_small{
+
+        display: flex;
+        width: 36.2rem; 
+        gap: 1rem;
+    overflow: hidden; /* Ensures the content is not2revealed until the animation */
+    border-right: .35em solid rgb(0, 0, 0); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;/* Adjust as needed */
+    animation:
+      typing 9s steps(60, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(0, 0, 0); }
+  }
+
+    }
+
+
+@media  (max-width:769px){
+
+.tekst_small{
+    display: grid;
+    gap: 1rem;
+}
+    
+    .tekst_small > h2:nth-child(1){
+        max-width: 12rem; 
+        gap: 1rem;
+    overflow: hidden; /* Ensures the content is not2revealed until the animation */
+    border-right: .15em solid rgb(0, 0, 0); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;/* Adjust as needed */
+    animation:
+      typing 4s steps(60, end),
+      blink-caret .75s step-end infinite;
+  }
+
+   
+  .tekst_small > h2:nth-child(2){
+    max-width: 14rem; 
+    gap: 1rem;
+overflow: hidden; /* Ensures the content is not2revealed until the animation */
+border-right: .15em solid rgb(0, 0, 0); /* The typwriter cursor */
+white-space: nowrap; /* Keeps the content on a single line */
+margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+letter-spacing: .15em;/* Adjust as needed */
+animation:
+  typing 6s steps(60, end),
+  blink-caret .75s step-end infinite;
+}
+
+ 
+.tekst_small > h2:nth-child(3){
+    max-width: 11.8rem; 
+    gap: 1rem;
+overflow: hidden; /* Ensures the content is not2revealed until the animation */
+border-right: .15em solid rgb(0, 0, 0); /* The typwriter cursor */
+white-space: nowrap; /* Keeps the content on a single line */
+margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+letter-spacing: .15em;/* Adjust as needed */
+animation:
+  typing 8s steps(60, end),
+  blink-caret .75s step-end infinite;
+}
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(0, 0, 0); }
+  }
+}
+
+
+
+.timeline{
+    padding: 2rem;
+    margin: 0 auto;
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+
+}
+
+.timeline li{
+    font-size: 1.6rem;
+    font-weight: 600;
+    list-style: none;
+}
+
+
+.cv_list{
+   flex: 1 0 50px;
+}
+
+.skill_circle{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 1rem;
+
+}
+
+.timeline p {
+    font-size: 0.8rem;
+}
+
+.circle{
+    border: solid 1px black;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+
+.cv_two_one {
+    display: grid;
+    justify-content: center;
+    }
+
+
+/* Element | http://127.0.0.1:5500/portfolio/cv.html */
+
+div.skill_circle:nth-child(1) > div:nth-child(1) {
+    background-color: black;
+  }
+  
+  /* Element | http://127.0.0.1:5500/portfolio/cv.html */
+  
+  div.skill_circle:nth-child(1) > div:nth-child(2) {
+    background-color: black;
+  }
+  
+  /* Element | http://127.0.0.1:5500/portfolio/cv.html */
+  
+  div.skill_circle:nth-child(1) > div:nth-child(3) {
+    background-color: black;
+  }
+  
+  /* Element | http://127.0.0.1:5500/portfolio/cv.html */
+  
+  div.skill_circle:nth-child(1) > div:nth-child(4) {
+    background-color: black;
+  }
+  
+  /* Element | http://127.0.0.1:5500/portfolio/cv.html */
+  
+  div.skill_circle:nth-child(1) > div:nth-child(5) {
+    background-color: black;
+  }
+  
+  /* Element | http://127.0.0.1:5500/portfolio/cv.html */
+  
+  div.skill_circle:nth-child(2) > div:nth-child(1) {
+    background-color: black;
+  }
+  
+  /* Element | http://127.0.0.1:5500/portfolio/cv.html */
+  
+  div.skill_circle:nth-child(2) > div:nth-child(2) {
+    background-color: black;
+  }
+  
+  /* Element | http://127.0.0.1:5500/portfolio/cv.html */
+  
+  div.skill_circle:nth-child(2) > div:nth-child(3) {
+    background-color: black;
+  }
+  
+  /* Element | http://127.0.0.1:5500/portfolio/cv.html */
+  
+  div.skill_circle:nth-child(3) > div:nth-child(1) {
+    background-color: black;
+  }
+  
+  /* Element | http://127.0.0.1:5500/portfolio/cv.html */
+  
+  div.skill_circle:nth-child(3) > div:nth-child(2) {
+    background-color: black;
+  }
+  
+  /* Element | http://127.0.0.1:5500/portfolio/cv.html */
+  
+  div.skill_circle:nth-child(3) > div:nth-child(3) {
+    background-color: black;
+  }
+  
+  /* Element | http://127.0.0.1:5500/portfolio/cv.html */
+  
+  div.skill_circle:nth-child(3) > div:nth-child(4) {
+    background-color: black;
+  }
+  
+  /* Element | http://127.0.0.1:5500/portfolio/cv.html */
+  
+  div.skill_circle:nth-child(3) > div:nth-child(5) {
+    background-color: black;
+  }
+  
+  /* Element | http://127.0.0.1:5500/portfolio/cv.html */
+  
+  div.skill_circle:nth-child(4) > div:nth-child(1) {
+    background-color: black;
+  }
+  
+  /* Element | http://127.0.0.1:5500/portfolio/cv.html */
+  
+  div.skill_circle:nth-child(4) > div:nth-child(2) {
+    background-color: black;
+  }
+  
+  /* Element | http://127.0.0.1:5500/portfolio/cv.html */
+  
+  div.skill_circle:nth-child(4) > div:nth-child(3) {
+    background-color: black;
+  }
+  
+  /* Element | http://127.0.0.1:5500/portfolio/cv.html */
+  
+  div.skill_circle:nth-child(4) > div:nth-child(4) {
+    background-color: black;
+  }
+  
+  /* Element | http://127.0.0.1:5500/portfolio/cv.html */
+  
+  div.skill_circle:nth-child(5) > div:nth-child(1) {
+    background-color: black;
+  }
+  
+  /* Element | http://127.0.0.1:5500/portfolio/cv.html */
+  
+  div.skill_circle:nth-child(5) > div:nth-child(2) {
+    background-color: black;
+  }
+  
+  /* Element | http://127.0.0.1:5500/portfolio/cv.html */
+  
+  div.skill_circle:nth-child(5) > div:nth-child(3) {
+    background-color: black;
+  }
+  
+  /* Element | http://127.0.0.1:5500/portfolio/cv.html */
+  
+  div.skill_circle:nth-child(5) > div:nth-child(4) {
+    background-color: black;
+  }
+  
